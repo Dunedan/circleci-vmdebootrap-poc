@@ -4,4 +4,4 @@ dependencies:
 test:
   override:
     - ./bootstrap.sh:
-      timeout: 7200
+        timeout: 7200
