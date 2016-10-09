@@ -8,4 +8,4 @@ sudo vmdebootstrap \
   --log-level debug \
   --size 1G \
   --distribution jessie \
-  jessie.img
+  --image jessie.img
