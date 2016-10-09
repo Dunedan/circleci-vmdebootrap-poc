@@ -3,5 +3,5 @@ dependencies:
     - sudo apt-get update; sudo apt-get install vmdebootstrap
 test:
   override:
-    - ./bootstrap.sh
+    - ./bootstrap.sh:
       timeout: 7200
