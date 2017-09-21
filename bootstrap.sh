@@ -2,10 +2,10 @@
 
 set -e
 
-sudo vmdebootstrap \
+vmdebootstrap \
   --verbose \
   --log amd64-uefi.log \
   --log-level debug \
   --size 1G \
-  --distribution jessie \
-  --image jessie.img
+  --distribution stretch \
+  --image stretch.img

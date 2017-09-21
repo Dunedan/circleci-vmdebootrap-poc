@@ -1,0 +1,18 @@
+---
+
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: 'apt-get update; apt-get install -y qemu-user-static vmdebootstrap'
+          environment:
+            DEBIAN_FRONTEND: noninteractive
+      - run:
+          name: Run vmdebootstrap
+          command: './bootstrap.sh'
